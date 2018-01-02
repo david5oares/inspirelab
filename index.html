@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inspire Lab - Test Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -19,19 +20,29 @@
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active" role="presentation"><a href="#">First Item</a></li>
+                    <li class="active" role="presentation"><a href="#sobre">Sobre</a></li>
                     <li role="presentation"><a href="#">Second Item</a></li>
                     <li role="presentation"><a href="#">Third Item</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="jumbotron hero"></div>
-    <section>
+    <header>
+    <div class="conteudo-header">
+        </div>
+    </header>
+    <section class="fundo-sobre" id="sobre">
         <div class="container">
             <div class="row">
-                <div class="col-md-12"></div>
-                <div class="col-md-12"></div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="titulo">O que é o inspire LAB?</h2>
+                <hr class="linha-branca">
+                <p >
+É um FabLab, isto é, um espaço tipicamente equipado com uma série de ferramentas flexíveis controladas por computador que cobrem várias escalas de comprimento diferentes e vários materiais, com o objetivo de fazer "quase qualquer coisa". Isso inclui produtos habilitados para tecnologia, geralmente percebidos como limitados à produção em massa.
+                    
+                    </p>
+                <a href="#services" class="btn btn-default btn-md botao">Começar!</a>    
+                </div>
             </div>
         </div>
     </section>
@@ -45,7 +56,46 @@
             </div>
         </div>
     </footer>
+
     <script src="assets/js/jquery.min.js"></script>
+    
+        <script>
+    $('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+    </script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
