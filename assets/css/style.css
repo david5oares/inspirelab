@@ -19,11 +19,23 @@ body {
 
 
 
-header {
+header, #desktop {
+    position: relative;
+    width: 100%;
+    
+    background: url(../../assets/img/image2.jpg);
+    background-position: center;
+    background-size: cover;
+    border: none;
+    min-height: 100%;
+    
+}
+header, #mobile {
     position: relative;
     width: 100%;
     min-height: auto;
-    background: url(../../assets/img/image2.jpg);
+    padding: 50, 0;
+    background: url(../../assets/img/image.jpg);
     background-position: center;
     background-size: cover;
     border: none;
@@ -36,11 +48,6 @@ header .conteudo-header {
 
 }
 
-@media (min-width: 768px) {
-    header {
-        min-height: 100%;
-    }
-}
 
 section {
     padding: 100px 0;
@@ -80,4 +87,24 @@ p {
 }
 .btn-default:hover {
     background-color: #ddd;
+}
+canvas {
+    min-width: 100%;
+    height: 200px;
+    
+}
+.site-footer {
+    background-color: #333;
+    padding: 50px 50px;
+    color: #fff;
+}
+.site-footer h4 {
+    font-family: 'Abril Fatface';
+    color: #fff;
+    text-align: left;
+}
+.site-footer h5 {
+    font-family: 'Abril Fatface';
+    color: #fff;
+    text-align: right;
 }
