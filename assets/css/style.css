@@ -2,40 +2,48 @@ body,
 html {
     width: 100%;
     height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 body {
     font-family: 'Raleway', sans-serif;
 }
+.container {
+    width: 100%;
+}
 .navbar {
     margin-bottom: 0;
     border: none;
-    height: 80px;
+    height: 100px;
     background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    z-index: 1;
 }
-
+.navbar-brand {
+    padding-top: 85px;
+    padding-left: 100px;
+    
+}
+.navbar-default ul {
+   padding: 20px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-weight: lighter;
+    font-size: 1.4em;
+}
 .navbar-brand .glyphicon {
     margin-right: 6px;
 }
 
-
-
-header, #desktop {
+#desktop {
     position: relative;
-    width: 100%;
-    
-    background: url(../../assets/img/image2.jpg);
-    background-position: center;
-    background-size: cover;
-    border: none;
-    min-height: 100%;
-    
 }
 header, #mobile {
     position: relative;
     width: 100%;
     min-height: auto;
     padding: 50, 0;
-    background: url(../../assets/img/image.jpg);
     background-position: center;
     background-size: cover;
     border: none;
@@ -47,14 +55,25 @@ header .conteudo-header {
     text-align: center;
 
 }
-
+.welcome {
+    z-index: 1;
+    padding-top: 10%;
+    position: absolute;
+}
+.wel-title, h1{
+    text-align: center;
+    color: #fff;
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 3.5em;
+}
 
 section {
     padding: 100px 0;
 }
 
 .fundo-sobre {
-    background-color: #f9b21d;
+    background: linear-gradient(to bottom, #fd814a 10%,#f9b21d 100%);
 }
 
 .fundo-sobre h2{
@@ -88,10 +107,14 @@ p {
 .btn-default:hover {
     background-color: #ddd;
 }
-canvas {
+/*HEADER*/
+canvas,waves {
     min-width: 100%;
-    height: 200px;
-    
+    min-height: 100%;
+    margin-top: -100px;
+    margin-bottom: -5px;
+   
+ /*FOOTER*/   
 }
 .site-footer {
     background-color: #333;
