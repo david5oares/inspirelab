@@ -36,17 +36,8 @@ body {
     margin-right: 6px;
 }
 
-#desktop {
+#header {
     position: relative;
-}
-header, #mobile {
-    position: relative;
-    width: 100%;
-    min-height: auto;
-    padding: 50, 0;
-    background-position: center;
-    background-size: cover;
-    border: none;
 }
 
 header .conteudo-header {
@@ -67,7 +58,14 @@ header .conteudo-header {
     font-weight: bold;
     font-size: 3.5em;
 }
-
+wel-title-sm,h1 {
+    padding-top: 100px;
+    text-align: center;
+    color: #fff;
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: 2.5em;
+}
 section {
     padding: 100px 0;
 }

@@ -1,13 +1,14 @@
-function setup(){
- logo = createCanvas(75,75);
-    logo.parent("logo");
+void setup(){
+ size(70,75);
+smooth();
 }
 
-function draw(){
+void draw(){
+background(0,0);
 noFill();
 strokeWeight(4);
 strokeCap(ROUND);
-smooth();
+stroke(255);
 arc(37, 21, 30, 30,PI-QUARTER_PI, TWO_PI+QUARTER_PI);
 line(29,33,29,40);
 line(45,33,45,40);
@@ -25,7 +26,7 @@ line(41,24,44,27);
 line(37,17,37,14);
 line(40,18,44,14);
 line(33,18,29,13);
-fill(0);
+fill(255);
 strokeWeight(0);
 text("InspireLAB",9,72);
 

@@ -1,57 +1,74 @@
-espaco = 15;
-velocidade = 0.0;
-tempo = 900.0;
-alturaonda = 190.0;
-var altura = [];
-var w;
-var dx;
-function setup() {
-waves = createCanvas(400, windowHeight, P2D);
-    waves.parent("waves");
-    w = width+16;
+int espaco = 15;
+float velocidade = 0.0;
+float tempo = 1800.0;
+float alturaonda = 95.0;
+float[] altura;
+int w;
+float dx;
+PImage circle, circle1, circle2;
+void setup() {
+size (1020, 405);
+    w = width+15;
    dx = (TWO_PI / tempo) * espaco;
-for (var i = 0; i < width; i++) {
-    var amount = map(i, 0, width, 0, PI);
-    altura[i] = w/espaco;
-  }
- smooth();
-    
+altura = new float[w/espaco];
+    smooth();
+
+  circle1 = loadImage("assets/js/circle1.png");
+  circle2 = loadImage("assets/js/circle2.png");
+    imageMode(CENTER);
 }
 
-function draw() {
-background('#521865');
+void draw() {
+background(#521865);
   calcWave();
   renderWave();
-    console.log(altura.length);
 }
 
-function calcWave() {
+void calcWave() {
     
-   velocidade = velocidade+0.02;
+   velocidade = velocidade+0.007;
 
-  x = velocidade;
+ float x = velocidade;
 
-  for (var i = 0; i < altura.length; i++) {
+  for (int i = 0; i < altura.length; i++) {
     altura[i] = sin(x)*alturaonda;
     x+=dx;
      
   }
 }
 
-function renderWave() {
+void renderWave() {
     noStroke();
-  
-
-    push();
-    translate(-80,0);
-  
-    fill('#802564');
-  for (var x = 0; x < altura.length; x++) {
-    ellipse((x*1.1)*espaco, height/1.1+altura[x], 110, 400);
+    
+fill(#802564);
+    pushMatrix();
+    translate(-5,15);
+    scale(1.15,0);
+    
+  for (int x = 0; x < altura.length; x++) {
+    ellipse(x*espaco, height/1.1+altura[x], 210, 360);
   }
-    pop();
-    fill('#fe8249');
-for (var x = 0; x < altura.length; x++) {
-    ellipse(x*espaco, height/1+altura[x], 200, 400);
+    popMatrix();
+    
+     fill(#fb4a56);
+pushMatrix();
+    translate(-10,15);
+    scale(1.11,0);
+   
+  for (int x = 0; x < altura.length; x++) {
+    //image( circle1, x*espaco, height/1.08+altura[x], 350,500);
+    ellipse(x*espaco, height/1.045+altura[x], 310, 340);
+    
   }
+popMatrix();
+    fill(#fe8249);
+pushMatrix();
+    scale(1,1);
+    translate(0,25);
+    
+for (int x = 0; x < altura.length; x++) {
+    
+    ellipse(x*espaco, height/1+altura[x], 250, 300);
+  }
+popMatrix();
 }

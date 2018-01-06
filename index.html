@@ -28,7 +28,7 @@
                     <!--<span id="logo"></span> 
                     <img src="assets/img/icon.svg" width="70">-->
 
-                    <canvas data-processing-sources="assets/js/logo.pde">
+                    <canvas data-processing-sources="assets/js/logo.js">
                     </canvas>
                 </a>
                 <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
@@ -45,35 +45,26 @@
     </nav>
 
     <!-- HEADER -->
-    <div class="hidden-xs hidden-sm" id="desktop">
+    <div id="header">
 
 
         <div class="container welcome">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 hidden-sm hidden-xs ">
                     <h1 class="wel-title">Bem vindo! Este é o <i>InspireLab</i><br>um FabLab criado para si 
                     <br>boas ideias - um bom ambiente</h1>
                 </div>
-            </div>
-        </div>
-
-    </div>
-    <div class="visible-xs-block visible-sm-block" id="mobile">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2 col-xs-12">
-
-                    <h2>Bem vindo ao InspireLab</h2>
-                    <hr>
-                    <p>loremsdfsafdsfdsfdsfdsfdsfdssssssdsadsadadsassssssssssssssssssssdf</p>
+                <div class="col-sm-12 col-xl-12 hidden-md hidden-lg">
+                    <h1 class="wel-title-sm">Bem vindo! Este é o <i>InspireLab</i><br>um FabLab criado para si 
+                    <br>boas ideias - um bom ambiente</h1>
                 </div>
+                
             </div>
         </div>
 
-
     </div>
-    <canvas data-processing-sources="assets/js/waves.pde" class="waves"></canvas>
+
+    <canvas data-processing-sources="assets/js/waves.js" class="waves"></canvas>
 
     <!-- SOBRE -->
     <section class="fundo-sobre" id="sobre">
