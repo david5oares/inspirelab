@@ -1,4 +1,4 @@
-int espaco = 15;
+int espaco = 18;
 float velocidade = 0.0;
 float tempo = 1800.0;
 float alturaonda = 95.0;
@@ -8,7 +8,7 @@ float dx;
 PImage circle, circle1, circle2;
 void setup() {
 size (1020, 405);
-    w = width+15;
+    w = width+18;
    dx = (TWO_PI / tempo) * espaco;
 altura = new float[w/espaco];
     smooth();

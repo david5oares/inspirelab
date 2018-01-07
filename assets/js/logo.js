@@ -8,7 +8,7 @@ background(0,0);
 noFill();
 strokeWeight(4);
 strokeCap(ROUND);
-stroke(255);
+stroke(0);
 arc(37, 21, 30, 30,PI-QUARTER_PI, TWO_PI+QUARTER_PI);
 line(29,33,29,40);
 line(45,33,45,40);
@@ -26,7 +26,7 @@ line(41,24,44,27);
 line(37,17,37,14);
 line(40,18,44,14);
 line(33,18,29,13);
-fill(255);
+fill(0);
 strokeWeight(0);
 text("InspireLAB",9,72);
 
