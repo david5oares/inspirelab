@@ -162,7 +162,7 @@
                     <h3><span class="glyphicon glyphicon-envelope"></span><b>Email: </b> inspirelab@gmail.com </h3>
                     <h3><span class="glyphicon glyphicon-phone"></span><b>Telefone: </b> 911281230</h3></div>
                     <div class="col-lg-4 social">
-                    <a target="_blank" href="www.facebook.com/inspirelab" type="alt_get"><h3><span class="glyphicon glyphicon-thumbs-up"></span>Facebook</h3></a></div>
+                    <a target="_blank" href="http://www.facebook.com/inspirelab" type="alt_get"><h3><span class="glyphicon glyphicon-thumbs-up"></span>Facebook</h3></a></div>
                 </div>
 
             </div>
