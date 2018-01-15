@@ -208,6 +208,30 @@ $sql = "SELECT * FROM recursos";
                         </div>
                     </div>
                     <div class="col-lg-2">
+                        <img class="img-thumbnail" alt="Responsive image" src="midia/image2.jpg" data-toggle="modal" data-target="#imagem1">
+                        <div class="modal fade" id="imagem1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <img class="img-responsive" alt="Responsive image" src="midia/image2.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <img class="img-thumbnail" alt="Responsive image" src="midia/image3.jpg" data-toggle="modal" data-target="#imagem1">
+                        <div class="modal fade" id="imagem1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <img class="img-responsive" alt="Responsive image" src="midia/image3.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
                         <img class="img-thumbnail" alt="Responsive image" src="midia/image4.jpg" data-toggle="modal" data-target="#imagem1">
                         <div class="modal fade" id="imagem1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                             <div class="modal-dialog" role="document">
@@ -219,13 +243,16 @@ $sql = "SELECT * FROM recursos";
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2">
+                </div>
+                <div class="row">
+                    <br>
+                    <div class="col-lg-2 col-lg-offset-2">
                         <img class="img-thumbnail" alt="Responsive image" src="midia/image5.jpg" data-toggle="modal" data-target="#imagem1">
                         <div class="modal fade" id="imagem1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-body">
-                                        <img class="img-responsive" alt="Responsive image" src="midia/image1.jpg">
+                                        <img class="img-responsive" alt="Responsive image" src="midia/image5.jpg">
                                     </div>
                                 </div>
                             </div>
@@ -243,10 +270,7 @@ $sql = "SELECT * FROM recursos";
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <br>
-                    <div class="col-lg-2 col-lg-offset-2">
+                    <div class="col-lg-2">
                         <img class="img-thumbnail" alt="Responsive image" src="midia/image7.jpg" data-toggle="modal" data-target="#imagem1">
                         <div class="modal fade" id="imagem1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                             <div class="modal-dialog" role="document">
@@ -265,30 +289,6 @@ $sql = "SELECT * FROM recursos";
                                 <div class="modal-content">
                                     <div class="modal-body">
                                         <img class="img-responsive" alt="Responsive image" src="midia/image8.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <img class="img-thumbnail" alt="Responsive image" src="midia/image9.jpg" data-toggle="modal" data-target="#imagem1">
-                        <div class="modal fade" id="imagem1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-body">
-                                        <img class="img-responsive" alt="Responsive image" src="midia/image9.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-2">
-                        <img class="img-thumbnail" alt="Responsive image" src="midia/image1.jpg" data-toggle="modal" data-target="#imagem1">
-                        <div class="modal fade" id="imagem1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-body">
-                                        <img class="img-responsive" alt="Responsive image" src="midia/image1.jpg">
                                     </div>
                                 </div>
                             </div>
